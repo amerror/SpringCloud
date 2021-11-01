@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test01_springcloud_service_commons/test01_springcloud_service_commons.iml" filepath="$PROJECT_DIR$/test01_springcloud_service_commons/test01_springcloud_service_commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test01_springcloud_service_eureka/test01_springcloud_service_eureka.iml" filepath="$PROJECT_DIR$/test01_springcloud_service_eureka/test01_springcloud_service_eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test01_springcloud_service_goods/test01_springcloud_service_goods.iml" filepath="$PROJECT_DIR$/test01_springcloud_service_goods/test01_springcloud_service_goods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test01_springcloud_service_parents/test01_springcloud_service_parents.iml" filepath="$PROJECT_DIR$/test01_springcloud_service_parents/test01_springcloud_service_parents.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test01_springcloud_service_protal/test01_springcloud_service_protal.iml" filepath="$PROJECT_DIR$/test01_springcloud_service_protal/test01_springcloud_service_protal.iml" />
+    </modules>
+  </component>
+</project>
