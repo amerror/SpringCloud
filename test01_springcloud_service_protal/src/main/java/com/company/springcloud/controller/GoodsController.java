@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import javax.xml.transform.Result;
 import java.util.List;
 
 /**
@@ -17,7 +18,7 @@ import java.util.List;
  */
 @RestController
 public class GoodsController {
-
+    @Autowired
     private GoodsRemoteClient goodsRemoteClient;
 
     private static final String GOODS_SERVICE_URL = "http://SERVICEGOODS/service/goods";
@@ -33,8 +34,9 @@ public class GoodsController {
     }
 
     @RequestMapping("/service/goods")
-    public List<Goods> getAllGoods(){
-        return goodsRemoteClient.getAllGoods();
+    public ResultObject getAllGoods(){
+        ResultObject resultObject = goodsRemoteClient.goods();
+        return resultObject;
     }
 
 

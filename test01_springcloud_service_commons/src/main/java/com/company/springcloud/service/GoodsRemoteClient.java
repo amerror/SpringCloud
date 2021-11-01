@@ -1,17 +1,20 @@
 package com.company.springcloud.service;
 
+import com.company.springcloud.constant.Constant;
 import com.company.springcloud.model.Goods;
+import com.company.springcloud.model.ResultObject;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
 
 @Component
-@FeignClient(value="test01-springcloud-service-goods")
+@FeignClient(value="SERVICEGOODS")
 public interface GoodsRemoteClient {
 
-    @RequestMapping(value = "/service/goods")
-    public List<Goods> getAllGoods();
+    @GetMapping("/service/goods")
+    public ResultObject goods();
 
 }
